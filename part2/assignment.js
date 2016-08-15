@@ -4,13 +4,13 @@
 // Return the sum of all of the numbers in the array. For example, given
 // [1, 2, 3, 4], then return 10. If the array is empty, return 0.
 function sum(arr) {
-  // var sum = 0;
-  //
-  // for (var i = 0; i < arr.length; i++) {
-  //   sum += arr[i];
-  // }
-  //
-  // return sum;
+  var sum = 0;
+
+  for (var i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+
+  return sum;
 }
 
 // Define a function named product that takes in one argument.
@@ -18,9 +18,19 @@ function sum(arr) {
 //
 // Return the product of all of the numbers in the array. For example, given
 // [1, 2, 3, 4], then return 24. If the array is empty, return 1.
+var arr = [1,2,3,4];
+
 function product(arr) {
-  // YOUR CODE HERE
+	var total = 1;
+
+	for (i=0; i<arr.length; i++) {
+		total = total*arr[i];
+	}
+	return total;
 }
+
+product (arr);
+
 
 // Define a function named concatenate that takes in one argument.
 //    arr (array of strings)
@@ -39,6 +49,11 @@ function concatenate(arr) {
 // Return a new string containing times copies of the input str. For example,
 // given 'hi' and 4, then return 'hihihihi'.
 function repeat(str, times) {
+  var a = [];
+  while(a.length < times){
+      a.push(str);
+  }
+  return a.join('');
 
 }
 
@@ -58,6 +73,16 @@ function repeat(str, times) {
 //
 // Return a new array of numbers where all from elements are replaced with to.
 // For example, given [1, 3, 2, 1, 3], 1, and 4, then return [4, 3, 2, 4, 3].
+var arr = [1,2,3,1,3];
+var from = 1;
+var to = 1;
+
+function replace () {
+	var rep = arr.replace(1,4);
+	return rep;
+}
+
+replace();
 
 
 
